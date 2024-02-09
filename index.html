@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quick sort</title>
+  <style>
+    #target{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+    }
+    .deep-0{
+      border-color:rgba(0, 0, 0, 0.3);
+    }
+    .deep-1{
+      border-color:rgba(0, 0, 0, 0.6);
+    }
+    .deep-2{
+      border-color:rgba(0, 0, 0, 0.8);
+    }
+    .deep-3{
+      border-color:rgba(0, 0, 0, 1);
+    }
+    span{
+      flex:1;
+      box-sizing: border-box;
+      text-align: center;
+      position: relative;
+      border-width: 2px;
+      border-top-style: solid;
+      border-bottom-style: solid;
+    }
+    span:first-child{
+      border-left-style: solid;
+    }
+    span:last-child{
+      border-right-style: solid;
+    }
+
+    .pivot{
+      background-color: rgba(255, 0,0, 0.2);
+    }
+    .leftIndex{
+      background-color: yellow;
+    }
+    .rightIndex{
+      background-color: green;
+    }
+    .pivot.leftIndex{
+      background-color: orange;
+    }
+    .pivot.rightIndex{
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <div id="target"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
